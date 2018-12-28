@@ -3,16 +3,22 @@ package com.stackroute.unittest.pe3;
 public class ChessBoard {
     public static void main(String[] args){
         final int len = 8;
-        for(int i=0;i<len;i++){
-            for(int j=0;j<len;j++){
-                if((i+j)%2==0){
-                    System.out.print("WW|");
+        System.out.println(createChessBoard(len));
+    }
+
+    public static String createChessBoard(int len){
+        String res ="";
+            for(int i=0;i<len;i++){
+                for(int j=0;j<len;j++){
+                    if((i+j)%2==0){
+                        res += ("WW|");
+                    }
+                    else{
+                        res+=("BB|");
+                    }
                 }
-                else{
-                    System.out.print("BB|");
-                }
+                res +="\n";
             }
-            System.out.println();
-        }
+            return res;
     }
 }

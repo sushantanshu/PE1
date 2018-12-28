@@ -6,16 +6,19 @@ import java.util.Calendar;
 
 public class FirstLastWeekDay {
     public  static void main(String []args){
-
+        System.out.println(getFirstLastWeekDay());
+    }
+    public static String getFirstLastWeekDay(){
+        String res ="";
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.DAY_OF_WEEK,Calendar.MONDAY);
         System.out.println();
         DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
-        System.out.println(df.format(cal.getTime()));
+        res+=(df.format(cal.getTime())+"\n");
         for (int i = 0; i <6; i++) {
             cal.add(Calendar.DATE, 1);
         }
-        System.out.println(df.format(cal.getTime()));
-        System.out.println();
+        res+=(df.format(cal.getTime())+"\n");
+        return res;
     }
 }
