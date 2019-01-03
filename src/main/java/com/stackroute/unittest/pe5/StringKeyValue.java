@@ -3,7 +3,7 @@ package com.stackroute.unittest.pe5;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExerciseThree {
+public class StringKeyValue {
     public static void main(String[] args){
         String[] strArr = {"a","b","c","d","a","c","c"};
         Map<String,Integer> map =appearsMultipleTimes(strArr);

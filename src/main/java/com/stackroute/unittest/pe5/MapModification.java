@@ -3,7 +3,7 @@ package com.stackroute.unittest.pe5;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExerciseFive {
+public class MapModification {
     public static void main(String[] args){
         Map<String,String> map1 = new HashMap<>();
         map1.put("val1","java");

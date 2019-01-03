@@ -2,7 +2,7 @@ package com.stackroute.unittest.pe4;
 
 import java.util.Scanner;
 
-public class ExerciseOne {
+public class NumberOfOccurance {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.println("Input the String : ");

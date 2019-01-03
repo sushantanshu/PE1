@@ -3,7 +3,7 @@ package com.stackroute.unittest.pe5;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExerciseTwo {
+public class NumberOfCounts {
     public static void main(String[] args){
         String  str = "one one -one___two,,three,one @three*one?two";
         System.out.println(countString(str));

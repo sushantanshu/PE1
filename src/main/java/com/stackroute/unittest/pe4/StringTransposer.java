@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ExerciseFour {
+public class StringTransposer {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.println("Input the String : ");

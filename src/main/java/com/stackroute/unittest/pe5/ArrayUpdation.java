@@ -2,7 +2,7 @@ package com.stackroute.unittest.pe5;
 
 import java.util.ArrayList;
 
-public class ExerciseOne {
+public class ArrayUpdation {
 
     public static  void main(String[] args){
         ArrayList<String> al = new ArrayList<>();

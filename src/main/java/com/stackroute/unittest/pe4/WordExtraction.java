@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class ExerciseThree {
+public class WordExtraction {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.println("Input the String : ");

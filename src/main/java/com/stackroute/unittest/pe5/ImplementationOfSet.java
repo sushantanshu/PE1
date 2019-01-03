@@ -8,7 +8,7 @@ class Set_Comparator implements Comparator<String> {
         return str1.compareTo(str2);
     }
 }
-public class ExerciseSix {
+public class ImplementationOfSet {
     public static void main(String[] args){
         HashSet<String> set = new HashSet<String>();
         set.add("Harry");

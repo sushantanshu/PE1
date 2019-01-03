@@ -1,5 +1,7 @@
 package com.stackroute.unittest.pe5;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -7,11 +9,17 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-public class ExerciseFiveTest {
+public class MapModificationTest {
+
+    private MapModification mapMod;
+
+    @Before
+    public void setUp() throws Exception {
+        mapMod = new MapModification();
+    }
 
     @Test
     public void changeValues() {
-        ExerciseFive ex5 = new ExerciseFive();
         Map<String,String> map1 = new HashMap<>();
         map1.put("val1","java");
         map1.put("val2","c++");
@@ -26,7 +34,11 @@ public class ExerciseFiveTest {
         mapout2.put("val1"," ");
         mapout2.put("val2","mars");
 
-        assertEquals(mapout1,ex5.changeValues(map1));
-        assertEquals(mapout2,ex5.changeValues(map2));
+        assertEquals(mapout1,mapMod.changeValues(map1));
+        assertEquals(mapout2,mapMod.changeValues(map2));
+    }
+    @After
+    public void tearDown() throws Exception {
+        mapMod = null;
     }
 }
